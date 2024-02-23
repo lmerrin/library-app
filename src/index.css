@@ -1,0 +1,13 @@
+@import "normalize.css";
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgb(145, 219, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 219, 255, 1) 0%,
+    rgba(255, 255, 255, 0.5125512295081966) 50%,
+    rgba(145, 219, 255, 1) 100%
+  );
+}
