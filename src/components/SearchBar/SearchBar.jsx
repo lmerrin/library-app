@@ -1,8 +1,21 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 
-function SearchBar({ handleSearch }) {
+function SearchBar({ books, setFilteredBooks }) {
   const [query, setQuery] = useState("");
+  const handleSearch = (query) => {
+    const filtered = books.filter(
+      (book) =>
+        Object.values(book).some(
+          (value) =>
+            typeof value === "string" &&
+            value.toLowerCase().includes(query.toLowerCase())
+        ) ||
+        (typeof book.year === "string" &&
+          book.year.toLowerCase().includes(query.toLowerCase()))
+    );
+    setFilteredBooks(filtered);
+  };
 
   const handleChange = (e) => {
     setQuery(e.target.value);

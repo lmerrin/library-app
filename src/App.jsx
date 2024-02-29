@@ -5,20 +5,12 @@ import "./App.css";
 import dummyBooks from "./books.js";
 
 function App() {
-  const [books, setBooks] = useState(dummyBooks);
-  const [filteredBooks, setFilteredBooks] = useState(books);
-
-  const handleSearch = (query) => {
-    const filtered = books.filter((book) =>
-      book.title.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredBooks(filtered);
-  };
+  const [filteredBooks, setFilteredBooks] = useState(dummyBooks);
 
   return (
     <>
       <h1>Nā Puke ʻo Hawaiʻi</h1>
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar books={dummyBooks} setFilteredBooks={setFilteredBooks} />
       <BookList books={filteredBooks} />
     </>
   );
