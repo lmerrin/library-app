@@ -1,0 +1,14 @@
+.app-header {
+  background: #e8f7ff;
+  color: #333; /* Text color changed to match the background */
+  padding: 20px 20px 20px 60px;
+  text-align: left;
+  width: 100vw;
+}
+
+.app-header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0; /* Remove default margin */
+}
