@@ -1,0 +1,17 @@
+.book-list {
+  display: flex; /* Use flexbox for row layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 1200px; /* Increased max-width for better layout */
+  padding: 20px; /* Adjust padding */
+  gap: 20px; /* Adjust gap between cards */
+}
+
+
+.book-cover {
+  width: 100px;
+  height: 150px;
+  margin-right: 20px; /* Add margin to separate image and text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,10 +1,33 @@
 .book-card {
-    text-align: center; 
-    background-color: #ffffff; 
-    border-radius: 8px; /* Rounded corners for the card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    padding: 20px; 
-    width: 300px; 
-    height: 250px; 
-  }
-  
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Move the card up a bit on hover */
+}
+
+.book-cover {
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 20px 60px 20px 60px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 5px 0px;
+}
